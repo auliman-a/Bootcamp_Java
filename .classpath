@@ -17,5 +17,6 @@
 	<classpathentry kind="lib" path="E:/Projects/Workspace/Bootcamp/lib/ant-junit-1.6.5.jar"/>
 	<classpathentry kind="lib" path="E:/Projects/Workspace/Bootcamp/lib/ant-launcher-1.6.5.jar"/>
 	<classpathentry kind="lib" path="E:/Projects/Workspace/Bootcamp/lib/antlr-2.7.6rc1.jar"/>
+	<classpathentry kind="lib" path="E:/Projects/Workspace/Bootcamp/lib/jtds-1.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

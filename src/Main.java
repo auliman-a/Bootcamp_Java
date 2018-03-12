@@ -34,7 +34,7 @@ public class Main {
 		Main me = new Main();
 
 
-		me.addEmployee("Adidas", "Sepatu", "Running", 15000);
+		me.addEmployee("Adidas", "Sepatu", "Running", price);
 
 //		me.listEmployees();
 //		me.listEmployee2();
@@ -94,14 +94,14 @@ public class Main {
 	}
 	
 	/* Method to CREATE an employee in the database */
-	public Integer addEmployee(String fname, String lname, String cat, int salary){
+	public Integer addEmployee(String fname, String lname, String cat, BigDecimal salary){
 		Session session = factory.openSession();
 		Transaction tx = null;
 		Integer employeeID = null;
 
 		try {
 			tx = session.beginTransaction();
-			Employee employee = new Employee(fname, lname, salary);
+			Product employee = new Product(fname, lname,cat, salary);
 			employeeID = (Integer) session.save(employee); 
 			tx.commit();
 		} catch (HibernateException e) {
